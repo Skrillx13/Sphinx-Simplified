@@ -41,10 +41,20 @@
 {%- block content %}
 <div class="document">
   <div class="sphinxsidebar" role="navigation" aria-label="Main">
-    {%- include "searchfield.html" %}
+    {%- if pagename != "search" and builder != "singlehtml" %}
+    <search id="searchbox" style="display: none" role="search">
+        <div class="searchformwrapper">
+        <form class="search" action="{{ pathto('search') }}" method="get">
+          <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search The Document"/>
+          <input type="submit" value="{{ _('Go') }}" />
+        </form>
+        </div>
+    </search>
+    <script>document.getElementById('searchbox').style.display = "block"</script>
+    {%- endif %}
     {%- if display_toc %}
       <div class="sphinxsidebar-navigation__contents">
-        <h3>{{ _('On this page') }}</h3>
+        <h3>{{ _('Page Contents') }}</h3>
         {{ toc }}
       </div>
     {%- endif %}

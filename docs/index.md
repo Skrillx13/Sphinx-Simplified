@@ -9,7 +9,11 @@
 
 ## What is Sphinx Simplified?
 
-Sphinx Simplified is a Project that aims to 
+And why should I refer to it...
+
+Sphinx Simplified is a Project that aims to simplify and help new users of Sphinx in their journey. Unlike the [Sphinx Documentation](https://www.sphinx-doc.org/en/master/index.html#), this guide is **opinionated**. You will not find a concise list of every single API, but rather you will find some highly recommended options, and a recommended way to do things.
+
+This guide was designed specifically in mind to help people who are completely new at Sphinx, but wish to document their Python Projects. As such, while users who are familiar with Sphinx may not find this useful, it can still be off good reference.
 
 ## Key Features (Of Sphinx):
 
