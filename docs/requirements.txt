@@ -21,3 +21,5 @@ sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==2.0.0
 sphinxcontrib-serializinghtml==2.0.0
 urllib3==2.2.3
+myst-parser==4.0.0
+sphinx_design==0.6.1
